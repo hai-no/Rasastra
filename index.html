@@ -3,60 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Rasastra Official</title>
     <meta
       name="description"
-      content="Website resmi Rasastra.Officia Lihat kegiatan yang sudah kami lakukan dan bantu lebih banyak penerima manfaat."
+      content="Rasastra adalah komunitas yang bersama sama melakukan kegiatan berbagi dan sosial. Temukan informasi kegiatan yang sudah kami lakukan dan inspirasinya."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hai-no.github.io/Rasastra/" />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Images/Logo.jpeg" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Rasastra Berbagi Kebahagiaan</h1>
-      <nav>
-        <a href="#tentang">Tentang Kami</a>
-        <a href="#kegiatan">Kegiatan</a>
-        <a href="#kontak">Kontak</a>
+      <h1>Rasastra Official</h1>
+      <!-- <p>Rasastra Official</p> -->
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar-nav">
+          <div class="nav-logo">Rasastra Official</div>
+          <ul class="nav-menu">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="html/about-us.html">About Us </a>
+            </li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <button class="toggle-btn" id="toggle-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
-    <section id="tentang">
-      <h2>Tentang Kami</h2>
-      <p>
-        Kami adalah komunitas yang bergerak dalam kegiatan berbagi, menyebarkan
-        kebaikan ke berbagai daerah di Indonesia.
-      </p>
-    </section>
+    <div class="sidebar" id="sidebar">
+      <ul class="sidebar-menu">
+        <li class="menu-item">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span class="menu-text">Home</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="html/about-us.html">
+            <i class="fas fa-solid fa-address-card"></i>
+            <span class="menu-text">About Us</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="html/destinasi.html">
+            <i class="fas fa-map"></i>
+            <span class="menu-text">Destination</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="html/Harga.html">
+            <i class="fa fa-money-bill"></i>
+            <span class="menu-text">Booking</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#gallery">
+            <i class="fas fa-image"></i>
+            <span class="menu-text">Gallery</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#testimonials">
+            <i class="fas fa-solid fa-quote-left"></i>
+            <span class="menu-text">Testimonials</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact">
+            <i class="fas fa-envelope"></i>
+            <span class="menu-text">Contact Us</span>
+          </a>
+        </li>
+      </ul>
+      <div class="live-time" id="live-time"></div>
+    </div>
 
-    <section id="kegiatan">
-      <h2>Kegiatan Terbaru</h2>
-      <article>
-        <h3>Berbagi di Kampung Cibuluh (April 2025)</h3>
-        <img
-          src="images/kegiatan1.jpg"
-          alt="Berbagi makanan di Kampung Cibuluh"
-        />
+    <main>
+      <section id="tentang">
+        <h2>Tentang Rasastra</h2>
         <p>
-          Pada tanggal 10 April 2025, kami membagikan 50 paket sembako kepada
-          keluarga pra-sejahtera. Terima kasih untuk para donatur!
+          Kami adalah komunitas yang mendokumentasikan dan menyebarkan kegiatan
+          berbagi, agar lebih banyak orang mendapatkan manfaat dan inspirasi
+          dari kebaikan.
         </p>
-      </article>
-      <!-- Tambahkan kegiatan lainnya di sini -->
-    </section>
+      </section>
 
-    <section id="kontak">
-      <h2>Hubungi Kami</h2>
-      <p>Email: komunitasberbagi@email.com</p>
-      <p>
-        Instagram:
-        <a href="https://instagram.com/komunitasberbagi" target="_blank"
-          >@komunitasberbagi</a
-        >
-      </p>
-    </section>
+      <section id="kegiatan">
+        <h2>Kegiatan Terbaru</h2>
+        <article>
+          <h3>Berbagi Bersama Tuna Netra SLB Cahaya Qur'an (April 2025)</h3>
+          <p>
+            Kami membagikan 100 pcs 3kg beras dan makanan kepada Tuna Netra di
+            SLB Cahaya Qur'an.
+          </p>
+        </article>
+        <article>
+          <h3>Berbagi Bersama Tuna Netra Yayasan Mentari Hati (04 Mei 2025)</h3>
+          <p>
+            Rasastra menyalurkan 90 pcs 3kg beras dan makanan di Yayasan Mentari
+            Hati.
+          </p>
+        </article>
+      </section>
+
+      <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>
+          Instagram:
+          <a href="https://instagram.com/rasastra_official" target="_blank"
+            >@rasastra_official</a
+          >
+        </p>
+        <p>
+          Email:
+          <a href="mailto:rasastra@gmail.com">rasastra@gmail.com</a>
+        </p>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2025 Komunitas Berbagi Kebahagiaan</p>
+      <p>
+        &copy; 2025 Rasastra_Official. Dibuat dengan semangat berbagi.
+        Inshaallah Berkah
+      </p>
     </footer>
   </body>
 </html>
