@@ -693,4 +693,13 @@ body {
     width: 40px;
     height: 40px;
   }
+
+  .cta-section {
+    background-image: url("Images/logo.jpeg");
+    color: #2f4f4f;
+    text-align: center;
+    padding: 20px 5px;
+    background-attachment: fixed;
+    background-position: center;
+  }
 }
