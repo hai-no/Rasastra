@@ -339,44 +339,42 @@ body {
   margin: 0;
 }
 
-/* Galleri */
-.gallery-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 40px;
-  box-sizing: border-box;
+.cta-section a {
+  margin-top: 7rem;
 }
 
+/* Galleri */
 .gallery-slider {
+  width: 100%;
+  max-width: 900px;
+  margin: 5rem auto;
   position: relative;
-  width: 80%;
-  max-width: 1200px;
-  aspect-ratio: 16 / 9;
-  background-color: #ffffff;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-track {
   display: flex;
-  transition: transform 0.4s ease-in-out;
-  will-change: transform;
-  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .gallery-item {
   flex: 0 0 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 550px; /* Ukuran sedang */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Navigation Buttons */
@@ -400,62 +398,6 @@ body {
 
 .right-button {
   right: 5px;
-}
-
-/* Testimonial Section */
-.testimonials {
-  color: #333;
-  text-align: center;
-  padding: 40px 15px;
-}
-
-.testimonials-header h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.testimonials-header p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
-.testimonials-slider {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.testimonial {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.testimonial.active {
-  display: block;
-  opacity: 1;
-}
-
-.slider-controls {
-  margin-top: 20px;
-}
-
-.slider-controls button {
-  background-color: #fff;
-  color: #708090;
-  border: none;
-  padding: 10px;
-  font-size: 1.8em;
-  cursor: pointer;
-  border-radius: 50%;
-  margin: 0 5px;
-  transition: background-color 0.3s;
-}
-
-.slider-controls button:hover {
-  color: #2f4f4f;
 }
 
 .contact {
@@ -688,6 +630,13 @@ body {
     width: 100%;
     aspect-ratio: 3 / 4;
   }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -709,20 +658,6 @@ body {
   }
   .cta-section {
     height: 40vh;
-  }
-
-  .toggle-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .sidebar {
-    width: 200px;
-  }
-
-  .sidebar-menu a {
-    font-size: 16px;
   }
 
   .header-text h1 {
