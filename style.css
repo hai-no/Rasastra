@@ -299,7 +299,7 @@ body {
 }
 
 .parallax-bg {
-  background-image: url("images/logo.jpeg");
+  background-image: url("images/logo.png");
   background-size: cover;
   background-position: center;
   position: absolute;
